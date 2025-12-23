@@ -84,7 +84,7 @@
   border-radius: 50% !important;
   border: 1.5px solid #fff !important;
   object-fit: cover !important;
-  margin-right: 4px !important;
+  margin-right: -15px !important;
 }
 
 .story-username {
@@ -98,6 +98,7 @@
   color: rgba(255, 255, 255, 0.7) !important;
   font-size: 12px !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  margin-left: -15px
 }
 
 /* ENCADRÉ TEXTE - MODE LIGHT (par défaut) */
