@@ -1,0 +1,100 @@
+/* Wrapper principal */
+.pinkstagram-story-wrapper {
+  position: relative !important;
+  width: 300px !important;
+  height: 500px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  background: #000 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+/* TUER TOUTES les barres parasites du CSS externe */
+.pinkstagram-story-wrapper *:not(.story-progress-bar):not(.progress-fill):not(.story-header):not(.story-avatar):not(.story-username):not(.story-time):not(.pinkstagram-story)::before,
+.pinkstagram-story-wrapper *:not(.story-progress-bar):not(.progress-fill):not(.story-header):not(.story-avatar):not(.story-username):not(.story-time):not(.pinkstagram-story)::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Image */
+.pinkstagram-story {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* NOTRE barre de progression - UNE SEULE */
+.story-progress-bar {
+  position: absolute !important;
+  top: 8px !important;
+  left: 8px !important;
+  width: calc(100% - 16px) !important;
+  height: 2px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 2px !important;
+  z-index: 10000 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* La partie remplie - COMMENCE À GAUCHE */
+.progress-fill {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 50% !important; /* 50% de progression */
+  background: #fff !important;
+  border-radius: 2px !important;
+}
+
+/* En-tête */
+.story-header {
+  position: absolute !important;
+  top: 18px !important;
+  left: 10px !important;
+  right: 10px !important;
+  z-index: 10000 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.story-avatar {
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  border: 1.5px solid #fff !important;
+  object-fit: cover !important;
+}
+
+.story-username {
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+.story-time {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 12px !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
