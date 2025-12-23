@@ -103,8 +103,7 @@
 /* ENCADRÉ TEXTE - MODE LIGHT (par défaut) */
 .story-caption-box {
   width: 300px;
-  margin: -60px auto 0;
-  padding: 15px 20px;
+  margin: -65px auto 0;
   background: var(--nstgrm-bck);
   color: var(--nstgrm-txt);
   border-radius: 0 0 12px 12px;
