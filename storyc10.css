@@ -163,3 +163,17 @@
   z-index: 1 !important;
   pointer-events: none !important; /* AJOUTÉ pour ne pas bloquer les clics */
 }
+
+/* CACHER le système de stories parasite du CSS externe */
+.pinkstagram-story .story-cont,
+.pinkstagram-story .story-icon,
+.pinkstagram-story .story-cross {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Ou cachez carrément tout ce qui n'est pas VOTRE code */
+.pinkstagram-story:not(.pinkstagram-story-wrapper .pinkstagram-story) {
+  display: none !important;
+}
