@@ -124,3 +124,8 @@
   background: #282828 !important;
   color: #8f8e8c !important;
 }
+
+/* CACHER l'élément story-icon parasite */
+.story-icon {
+  display: none !important;
+}
